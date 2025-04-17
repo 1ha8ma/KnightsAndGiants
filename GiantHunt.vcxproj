@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{0dc716f1-23a7-4525-bd12-26a4c3f5c7d6}</ProjectGuid>
+    <RootNamespace>GiantHunt</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\hamar\Desktop\KnightsAndGiants\Library\Dxlib_h;C:\Users\hamar\Desktop\KnightsAndGiants\Library\Effekseer_h;C:\Users\hamar\Desktop\KnightsAndGiants\Library\Json\include</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <LanguageStandard>Default</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\hamar\Desktop\KnightsAndGiants\Library\Dxlib_h;C:\Users\hamar\Desktop\KnightsAndGiants\Library\Effekseer_h;C:\Users\hamar\Desktop\KnightsAndGiants\Library\Json\include;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\hamar\Desktop\KnightsAndGiants\Library\Dxlib_h;C:\Users\hamar\Desktop\KnightsAndGiants\Library\Effekseer_h;C:\Users\hamar\Desktop\KnightsAndGiants\Library\Json\include</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <LanguageStandard>Default</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\hamar\Desktop\KnightsAndGiants\Library\Dxlib_h;C:\Users\hamar\Desktop\KnightsAndGiants\Library\Effekseer_h;C:\Users\hamar\Desktop\KnightsAndGiants\Library\Json\include;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ArmEnemy.cpp" />
+    <ClCompile Include="ArmEnemyAttackRock.cpp" />
+    <ClCompile Include="ArmEnemyFallDown.cpp" />
+    <ClCompile Include="ArmEnemyHandUp.cpp" />
+    <ClCompile Include="ArmEnemyIdle.cpp" />
+    <ClCompile Include="ArmEnemyMoveBase.cpp" />
+    <ClCompile Include="ArmEnemyDropRock.cpp" />
+    <ClCompile Include="ArmEnemyStage.cpp" />
+    <ClCompile Include="ArmEnemyStartScene.cpp" />
+    <ClCompile Include="ArmEnemySwing.cpp" />
+    <ClCompile Include="BGM.cpp" />
+    <ClCompile Include="Calculation.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="PlayerFalling.cpp" />
+    <ClCompile Include="PlayerIdle.cpp" />
+    <ClCompile Include="StageObject.cpp" />
+    <ClCompile Include="TutorialScene.cpp" />
+    <ClCompile Include="CollisionManager.cpp" />
+    <ClCompile Include="Effect.cpp" />
+    <ClCompile Include="EnemyBase.cpp" />
+    <ClCompile Include="WeakPoint.cpp" />
+    <ClCompile Include="FPS.cpp" />
+    <ClCompile Include="GameClearScene.cpp" />
+    <ClCompile Include="GameManager.cpp" />
+    <ClCompile Include="GameOverScene.cpp" />
+    <ClCompile Include="GameScene.cpp" />
+    <ClCompile Include="GameUI.cpp" />
+    <ClCompile Include="Input.cpp" />
+    <ClCompile Include="Loader.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="PlayerClimb.cpp" />
+    <ClCompile Include="PlayerFallDown.cpp" />
+    <ClCompile Include="PlayerJump.cpp" />
+    <ClCompile Include="PlayerNormalAttack.cpp" />
+    <ClCompile Include="PlayerPiercing.cpp" />
+    <ClCompile Include="PlayerRun.cpp" />
+    <ClCompile Include="PlayerSquat.cpp" />
+    <ClCompile Include="PlayerStateProcessBase.cpp" />
+    <ClCompile Include="RankingScene.cpp" />
+    <ClCompile Include="SceneBase.cpp" />
+    <ClCompile Include="SoundEffect.cpp" />
+    <ClCompile Include="StageBase.cpp" />
+    <ClCompile Include="Time.cpp" />
+    <ClCompile Include="TitleScene.cpp" />
+    <ClCompile Include="Wall.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ArmEnemy.h" />
+    <ClInclude Include="ArmEnemyAttackRock.h" />
+    <ClInclude Include="ArmEnemyFallDown.h" />
+    <ClInclude Include="ArmEnemyHandUp.h" />
+    <ClInclude Include="ArmEnemyIdle.h" />
+    <ClInclude Include="ArmEnemyMoveBase.h" />
+    <ClInclude Include="ArmEnemyDropRock.h" />
+    <ClInclude Include="ArmEnemyStage.h" />
+    <ClInclude Include="ArmEnemyStartScene.h" />
+    <ClInclude Include="ArmEnemySwing.h" />
+    <ClInclude Include="BGM.h" />
+    <ClInclude Include="Calculation.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="CollisionData.h" />
+    <ClInclude Include="CollisionManager.h" />
+    <ClInclude Include="Effect.h" />
+    <ClInclude Include="EnemyBase.h" />
+    <ClInclude Include="WeakPoint.h" />
+    <ClInclude Include="FPS.h" />
+    <ClInclude Include="GameClearScene.h" />
+    <ClInclude Include="GameManager.h" />
+    <ClInclude Include="GameOverScene.h" />
+    <ClInclude Include="GameScene.h" />
+    <ClInclude Include="GameUI.h" />
+    <ClInclude Include="Input.h" />
+    <ClInclude Include="Loader.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="PlayerClimb.h" />
+    <ClInclude Include="PlayerFallDown.h" />
+    <ClInclude Include="PlayerFalling.h" />
+    <ClInclude Include="PlayerIdle.h" />
+    <ClInclude Include="PlayerJump.h" />
+    <ClInclude Include="PlayerNormalAttack.h" />
+    <ClInclude Include="PlayerPiercing.h" />
+    <ClInclude Include="PlayerRun.h" />
+    <ClInclude Include="PlayerSquat.h" />
+    <ClInclude Include="PlayerStateProcessBase.h" />
+    <ClInclude Include="RankingScene.h" />
+    <ClInclude Include="StageObject.h" />
+    <ClInclude Include="SceneBase.h" />
+    <ClInclude Include="SoundEffect.h" />
+    <ClInclude Include="StageBase.h" />
+    <ClInclude Include="Time.h" />
+    <ClInclude Include="TitleScene.h" />
+    <ClInclude Include="TutorialScene.h" />
+    <ClInclude Include="Utility.h" />
+    <ClInclude Include="Wall.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\ArmEnemyData.json" />
+    <None Include="Data\CameraData.json" />
+    <None Include="Data\PlayerData.json" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

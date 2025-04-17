@@ -1,0 +1,410 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Main">
+      <UniqueIdentifier>{aa064f4d-f94e-4dd2-bda1-5845db06ebae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{5b130ce1-6d92-4300-874e-89232153e977}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{94f26bf3-893d-433b-9a76-f66f7b24af18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Collision">
+      <UniqueIdentifier>{e82dbe77-87a9-431f-833e-72e553fc7663}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Camera">
+      <UniqueIdentifier>{523fe433-8ccb-4907-9cf3-325907fe826a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player">
+      <UniqueIdentifier>{481d39b6-1a29-402c-9f7e-204772bb98bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Stage">
+      <UniqueIdentifier>{01dc42d8-b4fe-47db-b0c2-b519bd22e72c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Stage\ArmEnemyStage">
+      <UniqueIdentifier>{05023824-00f9-4258-be6f-32c9e1b19835}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player\PlayerState">
+      <UniqueIdentifier>{5f8b8471-6663-43f5-b112-003aa71c0eff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Enemy">
+      <UniqueIdentifier>{babc3fb7-50ae-4c50-a3f5-5f886417a7ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Stage\Base">
+      <UniqueIdentifier>{ba7e3ba5-4272-44ae-8ff5-0f29de3298aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player\PlayerState\Base">
+      <UniqueIdentifier>{32d0524f-931c-4e9c-903b-e7421e16df28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Enemy\ArmEnemy">
+      <UniqueIdentifier>{b0cf87fc-2421-4baf-ad44-d23b86eeb492}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Enemy\ArmEnemy\Move">
+      <UniqueIdentifier>{199d26dd-b321-4bac-9570-47f536606831}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Enemy\ArmEnemy\Move\Base">
+      <UniqueIdentifier>{34fdda42-4718-4eae-9443-d40999d21f21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI">
+      <UniqueIdentifier>{787af00f-5ad8-4bc4-b0af-28d7984a26e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Base">
+      <UniqueIdentifier>{c98cae2f-6012-4024-97c0-75194c600e61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sound">
+      <UniqueIdentifier>{ed8d781e-24da-486f-b40b-ee19c89f4d64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Enemy\EnemyBase">
+      <UniqueIdentifier>{40034a65-e313-446e-a55a-72c3ab2fe020}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Title">
+      <UniqueIdentifier>{0ed7feba-e100-401d-82d1-42015a7b135e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\GameOver">
+      <UniqueIdentifier>{10bfaf12-6e0c-45f4-8317-91c1b33f84d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Game">
+      <UniqueIdentifier>{bf142e25-0cd3-4e7e-aef4-254c63fa6432}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Time">
+      <UniqueIdentifier>{590f363b-dcd0-4659-bf29-493f17b842d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\StartScene">
+      <UniqueIdentifier>{bbc723d6-e2cf-4fad-8c61-5e07568e3f83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\GameClear">
+      <UniqueIdentifier>{885d84b0-ecd1-45d1-a018-30f7b0da58b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Ranking">
+      <UniqueIdentifier>{d031cf2b-8e5e-4a72-8945-e29ede372ed5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Tutorial">
+      <UniqueIdentifier>{de070161-887a-43e7-94c0-c1c84e52b5a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\StartScene\ArmEnemyStartScene">
+      <UniqueIdentifier>{c4c71a12-d914-4819-8821-1709076eeb66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Effect">
+      <UniqueIdentifier>{7b319599-3193-4017-8a83-d1635ef69d8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Enemy\ArmEnemy\Move\AttackObject">
+      <UniqueIdentifier>{463ef065-8a4d-441b-bf33-354aa580080d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Stage\StageObject">
+      <UniqueIdentifier>{092fec60-a0af-40c7-9de6-89fcc295a9d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\Loader">
+      <UniqueIdentifier>{519526e3-770e-489b-b752-cf1522161736}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\Calculation">
+      <UniqueIdentifier>{cecb99ee-d7ba-490d-bec6-12a2e17dd15d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\FPS">
+      <UniqueIdentifier>{02e9bb17-49a2-4bc6-9d81-a6b11ef90477}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\Input">
+      <UniqueIdentifier>{83bb6f8b-0dda-453b-b1de-3121f7982a95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data">
+      <UniqueIdentifier>{019a89d4-857e-4950-91b3-2e46a4c72b89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Enemy\WeakPoint">
+      <UniqueIdentifier>{af483a1b-fa65-44d1-8b97-c0896ede0d69}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="GameManager.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionManager.cpp">
+      <Filter>Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="ArmEnemyStage.cpp">
+      <Filter>Stage\ArmEnemyStage</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerJump.cpp">
+      <Filter>Player\PlayerState</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerNormalAttack.cpp">
+      <Filter>Player\PlayerState</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerRun.cpp">
+      <Filter>Player\PlayerState</Filter>
+    </ClCompile>
+    <ClCompile Include="StageBase.cpp">
+      <Filter>Stage\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerStateProcessBase.cpp">
+      <Filter>Player\PlayerState\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="ArmEnemy.cpp">
+      <Filter>Enemy\ArmEnemy</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerClimb.cpp">
+      <Filter>Player\PlayerState</Filter>
+    </ClCompile>
+    <ClCompile Include="WeakPoint.cpp">
+      <Filter>Enemy\WeakPoint</Filter>
+    </ClCompile>
+    <ClCompile Include="ArmEnemyMoveBase.cpp">
+      <Filter>Enemy\ArmEnemy\Move\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="ArmEnemyDropRock.cpp">
+      <Filter>Enemy\ArmEnemy\Move</Filter>
+    </ClCompile>
+    <ClCompile Include="ArmEnemyIdle.cpp">
+      <Filter>Enemy\ArmEnemy\Move</Filter>
+    </ClCompile>
+    <ClCompile Include="GameUI.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="ArmEnemySwing.cpp">
+      <Filter>Enemy\ArmEnemy\Move</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerSquat.cpp">
+      <Filter>Player\PlayerState</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerPiercing.cpp">
+      <Filter>Player\PlayerState</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneBase.cpp">
+      <Filter>Scene\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect.cpp">
+      <Filter>Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="BGM.cpp">
+      <Filter>Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundEffect.cpp">
+      <Filter>Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyBase.cpp">
+      <Filter>Enemy\EnemyBase</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleScene.cpp">
+      <Filter>Scene\Title</Filter>
+    </ClCompile>
+    <ClCompile Include="GameOverScene.cpp">
+      <Filter>Scene\GameOver</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerFallDown.cpp">
+      <Filter>Player\PlayerState</Filter>
+    </ClCompile>
+    <ClCompile Include="Time.cpp">
+      <Filter>Time</Filter>
+    </ClCompile>
+    <ClCompile Include="RankingScene.cpp">
+      <Filter>Scene\Ranking</Filter>
+    </ClCompile>
+    <ClCompile Include="ArmEnemyFallDown.cpp">
+      <Filter>Enemy\ArmEnemy\Move</Filter>
+    </ClCompile>
+    <ClCompile Include="GameClearScene.cpp">
+      <Filter>Scene\GameClear</Filter>
+    </ClCompile>
+    <ClCompile Include="TutorialScene.cpp">
+      <Filter>Scene\Tutorial</Filter>
+    </ClCompile>
+    <ClCompile Include="ArmEnemyHandUp.cpp">
+      <Filter>Enemy\ArmEnemy\Move</Filter>
+    </ClCompile>
+    <ClCompile Include="ArmEnemyStartScene.cpp">
+      <Filter>Scene\StartScene\ArmEnemyStartScene</Filter>
+    </ClCompile>
+    <ClCompile Include="ArmEnemyAttackRock.cpp">
+      <Filter>Enemy\ArmEnemy\Move\AttackObject</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerIdle.cpp">
+      <Filter>Player\PlayerState</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerFalling.cpp">
+      <Filter>Player\PlayerState</Filter>
+    </ClCompile>
+    <ClCompile Include="GameScene.cpp">
+      <Filter>Scene\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="StageObject.cpp">
+      <Filter>Stage\StageObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Wall.cpp">
+      <Filter>Stage\ArmEnemyStage</Filter>
+    </ClCompile>
+    <ClCompile Include="Loader.cpp">
+      <Filter>Utility\Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="Calculation.cpp">
+      <Filter>Utility\Calculation</Filter>
+    </ClCompile>
+    <ClCompile Include="FPS.cpp">
+      <Filter>Utility\FPS</Filter>
+    </ClCompile>
+    <ClCompile Include="Input.cpp">
+      <Filter>Utility\Input</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Utility.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="GameManager.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionData.h">
+      <Filter>Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionManager.h">
+      <Filter>Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="ArmEnemyStage.h">
+      <Filter>Stage\ArmEnemyStage</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerJump.h">
+      <Filter>Player\PlayerState</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerNormalAttack.h">
+      <Filter>Player\PlayerState</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerRun.h">
+      <Filter>Player\PlayerState</Filter>
+    </ClInclude>
+    <ClInclude Include="Wall.h">
+      <Filter>Stage\ArmEnemyStage</Filter>
+    </ClInclude>
+    <ClInclude Include="StageBase.h">
+      <Filter>Stage\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerStateProcessBase.h">
+      <Filter>Player\PlayerState\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="ArmEnemy.h">
+      <Filter>Enemy\ArmEnemy</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerClimb.h">
+      <Filter>Player\PlayerState</Filter>
+    </ClInclude>
+    <ClInclude Include="WeakPoint.h">
+      <Filter>Enemy\WeakPoint</Filter>
+    </ClInclude>
+    <ClInclude Include="ArmEnemyMoveBase.h">
+      <Filter>Enemy\ArmEnemy\Move\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="ArmEnemyDropRock.h">
+      <Filter>Enemy\ArmEnemy\Move</Filter>
+    </ClInclude>
+    <ClInclude Include="ArmEnemyIdle.h">
+      <Filter>Enemy\ArmEnemy\Move</Filter>
+    </ClInclude>
+    <ClInclude Include="GameUI.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="ArmEnemySwing.h">
+      <Filter>Enemy\ArmEnemy\Move</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerSquat.h">
+      <Filter>Player\PlayerState</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerPiercing.h">
+      <Filter>Player\PlayerState</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneBase.h">
+      <Filter>Scene\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect.h">
+      <Filter>Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="BGM.h">
+      <Filter>Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundEffect.h">
+      <Filter>Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyBase.h">
+      <Filter>Enemy\EnemyBase</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleScene.h">
+      <Filter>Scene\Title</Filter>
+    </ClInclude>
+    <ClInclude Include="GameOverScene.h">
+      <Filter>Scene\GameOver</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerFallDown.h">
+      <Filter>Player\PlayerState</Filter>
+    </ClInclude>
+    <ClInclude Include="Time.h">
+      <Filter>Time</Filter>
+    </ClInclude>
+    <ClInclude Include="RankingScene.h">
+      <Filter>Scene\Ranking</Filter>
+    </ClInclude>
+    <ClInclude Include="ArmEnemyFallDown.h">
+      <Filter>Enemy\ArmEnemy\Move</Filter>
+    </ClInclude>
+    <ClInclude Include="GameClearScene.h">
+      <Filter>Scene\GameClear</Filter>
+    </ClInclude>
+    <ClInclude Include="TutorialScene.h">
+      <Filter>Scene\Tutorial</Filter>
+    </ClInclude>
+    <ClInclude Include="ArmEnemyHandUp.h">
+      <Filter>Enemy\ArmEnemy\Move</Filter>
+    </ClInclude>
+    <ClInclude Include="ArmEnemyStartScene.h">
+      <Filter>Scene\StartScene\ArmEnemyStartScene</Filter>
+    </ClInclude>
+    <ClInclude Include="ArmEnemyAttackRock.h">
+      <Filter>Enemy\ArmEnemy\Move\AttackObject</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerIdle.h">
+      <Filter>Player\PlayerState</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerFalling.h">
+      <Filter>Player\PlayerState</Filter>
+    </ClInclude>
+    <ClInclude Include="GameScene.h">
+      <Filter>Scene\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="StageObject.h">
+      <Filter>Stage\StageObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Loader.h">
+      <Filter>Utility\Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="Calculation.h">
+      <Filter>Utility\Calculation</Filter>
+    </ClInclude>
+    <ClInclude Include="FPS.h">
+      <Filter>Utility\FPS</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.h">
+      <Filter>Utility\Input</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\PlayerData.json">
+      <Filter>Data</Filter>
+    </None>
+    <None Include="Data\CameraData.json">
+      <Filter>Data</Filter>
+    </None>
+    <None Include="Data\ArmEnemyData.json">
+      <Filter>Data</Filter>
+    </None>
+  </ItemGroup>
+</Project>
