@@ -18,8 +18,9 @@ private:
 	//移動処理
 	void Move(UsePlayerData playerData, Camera camera);
 
-	VECTOR moveVecV;				//水平方向ベクトル
+	VECTOR moveVecH;				//水平方向ベクトル
+	VECTOR prevMoveVecH;			//以前の水平moveVec
 	float FirstJumpPower;			//最初のジャンプ力
-	float MoveSpeedHorizon;			//平行移動速度
+	float MoveSpeed;				//平行移動速度
 	float jumpPower;				//ジャンプ力
 };

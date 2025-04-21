@@ -29,11 +29,12 @@ PlayerJump::PlayerJump(int modelHandle,VECTOR prevmoveVec,VECTOR prevLookDir) :P
 	}
 
 	//変数初期化
-	moveVecV = prevmoveVec;
-	moveVecV.y = 0.0f;
+	moveVecH = prevmoveVec;
+	prevMoveVecH = prevmoveVec;
+	moveVecH.y = 0.0f;
 	newLookDirection = prevLookDir;
 	FirstJumpPower = jsonData["JumpPower"];
-	MoveSpeedHorizon = jsonData["FallingHorizonMoveSpeed"];
+	MoveSpeed = jsonData["RunSpeed"];
 	jumpPower = FirstJumpPower;
 }
 
@@ -73,14 +74,48 @@ bool PlayerJump::Update(UsePlayerData playerData, const Camera& camera, Collisio
 /// <summary>
 /// 移動処理
 /// </summary>
+/// <param name="playerData">プレイヤー情報</param>
+/// <param name="camera">カメラ</param>
 void PlayerJump::Move(UsePlayerData playerData, Camera camera)
 {
 	//初期化
 	moveVec = VGet(0.0f, 0.0f, 0.0f);
+	newLookDirection = playerData.lookDirection;
 
-	//水平方向を追加
-	moveVec = VAdd(moveVec, moveVecV);
+	//左スティックの角度を取る
+	float stickX = playerData.stickState.X;
+	float stickY = -playerData.stickState.Y;
+
+	//入力があれば
+	if ((stickX != 0.0f || stickY != 0.0f))
+	{
+		float stickAngle = atan2(stickY, stickX);
+
+		moveVecH.x = cos(stickAngle + -camera.GetangleH());
+		moveVecH.z = sin(stickAngle + -camera.GetangleH());
+
+		newLookDirection = moveVecH;
+	}
+	else
+	{
+		//前のフレームの方向に移動
+		moveVecH = prevMoveVecH;
+	}
+
+	//正規化
+	if (VSize(moveVecH) > 0)
+	{
+		//水平方向正規化
+		moveVecH = VNorm(moveVecH);
+		//水平方向を追加
+		moveVec = VNorm(VAdd(moveVec, moveVecH));
+		//速度追加
+		moveVec = VScale(moveVec, MoveSpeed);
+	}
 
 	//高さ加算
 	moveVec.y += jumpPower;
+
+	//前の水平移動として保存
+	prevMoveVecH = moveVecH;
 }

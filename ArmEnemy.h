@@ -75,9 +75,7 @@ private:
 	int playerRidePlace;					//プレイヤーが乗っている場所
 	bool moveChangeflg;						//状態からの動き変更指示フラグ
 	MoveKind nowMoveKind;					//現在の動きの種類
-	int playerRideFlame;					//プレイヤーが乗っている時間
 	bool isPlayerRide;						//プレイヤーが乗っているフラグ
-	bool playerRideMoveStartflg;			//プレイヤーが乗っている時の動きの開始フラグ
 	int attackCoolTimeFlame;				//攻撃クールタイムフレーム
 	bool isAttackCoolTime;					//攻撃クールタイムフラグ
 };

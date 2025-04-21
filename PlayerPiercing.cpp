@@ -107,13 +107,14 @@ void PlayerPiercing::PiercingAttack(int inputstate)
 {
 	if (!attack)
 	{
-		//ƒtƒŒ[ƒ€‰ÁZ
-		attackChargeFlame++;
-
 		//˜r‚ğã‚°‚é
 		if (rotate.z < MaxSwingUp)
 		{
+			//ƒtƒŒ[ƒ€‰ÁZ
+			attackChargeFlame++;
+			//ƒJƒƒ‰ƒY[ƒ€
 			cameraZoom -= CameraZoomSpeed;
+			//˜r‰ñ“]
 			rotate.z += SwingUpSpeed;
 		}
 	}

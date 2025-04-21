@@ -18,8 +18,6 @@ public:
 	void Draw()override;
 
 private:
-	const float RotateSpeed = 0.01f;	//‰ñ“]‘¬“x
-
 	//“®‚«
 	void Move(UsePlayerData playerData, Camera camera,CollisionData objectData);
 

@@ -353,7 +353,7 @@ void Player::ChangeState()
 	}
 
 	//走る
-	if (nowstateKind != State::Run && nowstateKind != State::Climb && nowstateKind != State::NormalAttack && nowstateKind != State::Piercing && nowstateKind != State::Squat && onGround && (stickstate.X != 0.0f || stickstate.Y != 0.0f))
+	if (nowstateKind != State::Run && nowstateKind != State::Climb && nowstateKind != State::NormalAttack && nowstateKind != State::Piercing && nowstateKind != State::Squat && nowstateKind != State::Jump && onGround && (stickstate.X != 0.0f || stickstate.Y != 0.0f))
 	{
 		delete nowstate;
 		nowstateKind = State::Run;
@@ -426,7 +426,7 @@ void Player::CheckOnGround(Camera* camera)
 		moveVec.y = 0.0f;
 
 		//一定時間落下していたら落下ダメージ
-		if (fallFrame >= 100)
+		if (fallFrame >= FallDamageStartFrame)
 		{
 			HP -= fallDamage;
 			//カメラ振動
@@ -437,7 +437,7 @@ void Player::CheckOnGround(Camera* camera)
 	}
 
 	//足が着いていなければ
-	if (position.y - positionDistanceGround > 0.0f && !onFootObject && nowstateKind != State::Climb)
+	if (position.y - positionDistanceGround >= 0.0f && !onFootObject && nowstateKind != State::Climb)
 	{
 		onGround = false;						//着地していないに変更
 		fallFrame++;							//落下フレーム加算
@@ -526,7 +526,7 @@ void Player::DrawPositionSet()
 		MV1SetPosition(modelHandle, drawPosition);		//一度修正前のポジションとボーンの位置の差を取るために反映
 		VECTOR hipsFramePos = MV1GetFramePosition(modelHandle, PlayerStateProcessBase::PlayerFrameNumber::Hips);	//腰あたりのポジション	
 		VECTOR correctVec = VSub(position, hipsFramePos);	//腰あたり→カプセル中心のベクトル分アニメーションのずれを補正
-		drawPosition = VAdd(drawPosition, correctVec);
+		drawPosition = VAdd(drawPosition, correctVec);		//修正反映
 	}
 
 	//回転

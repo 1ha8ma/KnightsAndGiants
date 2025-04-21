@@ -4,7 +4,7 @@
 class Loader
 {
 public:
-	static Loader* GetInstance();//インスタンスゲット
+	static Loader* GetInstance();		//インスタンスゲット
 
 	enum Kind
 	{

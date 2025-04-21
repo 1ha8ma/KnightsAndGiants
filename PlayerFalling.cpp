@@ -61,6 +61,7 @@ bool PlayerFalling::Update(UsePlayerData playerData, const Camera& camera, Colli
 	PlayAnimation(PlayAnimationSpeed, false);
 
 	Move(playerData, camera);
+
 	return false;
 }
 
@@ -71,5 +72,30 @@ bool PlayerFalling::Update(UsePlayerData playerData, const Camera& camera, Colli
 /// <param name="camera">カメラ</param>
 void PlayerFalling::Move(UsePlayerData playerData, Camera camera)
 {
-	moveVec = newLookDirection;
+	//初期化
+	moveVec = VGet(0, 0, 0);
+	newLookDirection = playerData.lookDirection;
+
+	//左スティックの角度を取る
+	float stickX = playerData.stickState.X;
+	float stickY = -playerData.stickState.Y;
+
+	//入力があれば
+	if ((stickX != 0.0f || stickY != 0.0f))
+	{
+		float stickAngle = atan2(stickY, stickX);
+
+		moveVec.x = cos(stickAngle + -camera.GetangleH());
+		moveVec.z = sin(stickAngle + -camera.GetangleH());
+
+		newLookDirection = moveVec;
+	}
+
+	//正規化
+	if (VSize(moveVec) > 0)
+	{
+		moveVec = VNorm(moveVec);
+	}
+
+	moveVec = VScale(moveVec, MoveSpeed);
 }

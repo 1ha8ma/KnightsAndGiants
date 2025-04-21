@@ -45,9 +45,9 @@ ArmEnemy::ArmEnemy()
 	//ポジション関係
 	position = VGet(jsonData["InitPositionX"], jsonData["InitPositionY"], jsonData["InitPositionZ"]);
 	moveChangeflg = false;
-	playerRideFlame = 0;
+	//playerRideFlame = 0;
 	isPlayerRide = false;
-	playerRideMoveStartflg = false;
+	//playerRideMoveStartflg = false;
 	attackCoolTimeFlame = 0;
 	isAttackCoolTime = false;
 
@@ -107,18 +107,6 @@ bool ArmEnemy::Update(VECTOR playerPos, Camera* camera)
 	capsuleStart = MV1GetFramePosition(modelHandle, (int)ArmEnemyMoveBase::ArmEnemyFrameIndex::Upperarm);
 	capsuleEnd = MV1GetFramePosition(modelHandle, (int)ArmEnemyMoveBase::ArmEnemyFrameIndex::LeftHandMiddle);
 
-	//プレイヤーが乗っていたら
-	if (nowMoveKind != MoveKind::Swing && nowMoveKind != MoveKind::HandUp && isPlayerRide)
-	{
-		playerRideFlame++;
-
-		if (playerRideFlame > PlayerRideMoveStartFlame)
-		{
-			playerRideFlame = 0;
-			playerRideMoveStartflg = true;
-		}
-	}
-
 	//弱点更新	
 	weakPoint->Update();
 	HP -= weakPoint->TakeDamage();
@@ -135,7 +123,7 @@ bool ArmEnemy::Update(VECTOR playerPos, Camera* camera)
 
 	//動き更新
 	moveChangeflg = move->Update(camera, playerPos);
-	if (!isAttackCoolTime && moveChangeflg && nowMoveKind != MoveKind::Idle && nowMoveKind != MoveKind::FallDown)
+	if (!isAttackCoolTime && moveChangeflg /*&& nowMoveKind != MoveKind::Idle && nowMoveKind != MoveKind::FallDown*/)
 	{
 		attackCoolTimeFlame = 0;
 		isAttackCoolTime = true;
@@ -282,11 +270,6 @@ void ArmEnemy::ChangeMove(VECTOR playerPos)
 		nowMoveKind == MoveKind::HandUp && moveChangeflg
 		)
 	{
-		//プレイヤーが乗っている時の動きのフラグを初期化
-		if (nowMoveKind == MoveKind::Swing || nowMoveKind == MoveKind::HandUp)
-		{
-			playerRideMoveStartflg = false;
-		}
 		VECTOR prevRotate = move->GetRotate();
 		delete move;
 		nowMoveKind = MoveKind::Idle;
@@ -303,7 +286,7 @@ void ArmEnemy::ChangeMove(VECTOR playerPos)
 	}
 
 	//振り回し...プレイヤーが上腕に乗っている場合
-	if (nowMoveKind != MoveKind::Swing && nowMoveKind != MoveKind::HandUp && playerRideMoveStartflg && playerRidePlace == (int)PartsName::Upperarm && isAttackCoolTime)
+	if (nowMoveKind != MoveKind::Swing && nowMoveKind != MoveKind::HandUp && isPlayerRide && playerRidePlace == (int)PartsName::Upperarm && isAttackCoolTime)
 	{
 		VECTOR prevRotate = move->GetRotate();
 		delete move;
@@ -312,7 +295,7 @@ void ArmEnemy::ChangeMove(VECTOR playerPos)
 	}
 
 	//腕を上げる...プレイヤーが手に乗っている場合
-	if (nowMoveKind != MoveKind::HandUp && nowMoveKind != MoveKind::Swing && playerRideMoveStartflg && playerRidePlace == (int)PartsName::Hand && isAttackCoolTime)
+	if (nowMoveKind != MoveKind::HandUp && nowMoveKind != MoveKind::Swing && isPlayerRide && playerRidePlace == (int)PartsName::Hand && isAttackCoolTime)
 	{
 		VECTOR prevRotate = move->GetRotate();
 		delete move;

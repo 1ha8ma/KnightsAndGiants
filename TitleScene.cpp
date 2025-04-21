@@ -189,7 +189,7 @@ void TitleScene::Draw()
 		SetDrawBlendMode(DX_BLENDMODE_ALPHA, stringAlpha);
 		//タイトル名
 		SetFontSize(150);
-		DrawString(200, 200, "騎士と巨人", GetColor(0, 0, 0));
+		DrawString(200, 300, "騎士と巨人", GetColor(0, 0, 0));
 
 		//ボタン指示
 		//透明度変更

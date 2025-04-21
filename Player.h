@@ -68,6 +68,7 @@ private:
 	const int FallDamageCameraShakingPlayflame = 20;				//落下ダメージ揺れ再生フレーム
 	const int FallDamageJoypadVibPower = 500;						//落下ダメージコントローラー揺れ強さ
 	const int FallDamageJoypadVibPlayflame = 100;					//落下ダメージコントローラー揺れフレーム
+	const int FallDamageStartFrame = 100;							//落下ダメージ加算開始フレーム
 	const float JumpDrowCorrectionY = -60.0f;						//ジャンプ時描画位置修正
 
 	//角度更新
