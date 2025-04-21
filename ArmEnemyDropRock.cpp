@@ -25,6 +25,7 @@ ArmEnemyDropRock::ArmEnemyDropRock(int modelHandle,VECTOR prevRotate) :ArmEnemyM
 	}
 
 	//•Ï”‰Šú‰»
+	coolTime= jsonData["RockAttackCoolTime"];
 	moveState = 0;
 	moveEnd = false;
 	rotate.x = InitRotateX;

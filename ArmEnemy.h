@@ -70,7 +70,7 @@ private:
 
 	//攻撃関係
 	int PlayerRideMoveStartFlame;			//プレイヤーが乗っている時の動きを始めるフレーム
-	int AttackCoolTime;						//攻撃クールタイム
+	int attackCoolTime;						//攻撃クールタイム
 	float DropRockStartPlayerHeight;		//岩落とし攻撃をするプレイヤーの高さ
 	int playerRidePlace;					//プレイヤーが乗っている場所
 	bool moveChangeflg;						//状態からの動き変更指示フラグ

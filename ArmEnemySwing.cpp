@@ -1,4 +1,6 @@
+#include<fstream>
 #include"DxLib.h"
+#include"nlohmann/json.hpp"
 #include"SoundEffect.h"
 #include"Camera.h"
 #include"ArmEnemySwing.h"
@@ -12,6 +14,18 @@ ArmEnemySwing::ArmEnemySwing(int modelHandle,VECTOR prevRotate) :ArmEnemyMoveBas
 {
 	//インスタンス化
 	se = new SoundEffect();
+
+	//ファイル読み込み
+	using Json = nlohmann::json;
+	Json jsonData;
+	std::ifstream ifs("Data/GameData/ArmEnemyData.json");
+	if (ifs)
+	{
+		ifs >> jsonData;
+	}
+
+	//変数初期化
+	coolTime = jsonData["SwingCoolTime"];
 	
 	//private変数初期化
 	rotate = prevRotate;

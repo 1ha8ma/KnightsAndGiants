@@ -8,4 +8,5 @@
 ArmEnemyMoveBase::ArmEnemyMoveBase(int modelHandle)
 {
 	this->modelHandle = modelHandle;
+	coolTime = 0;
 }

@@ -40,7 +40,7 @@ ArmEnemy::ArmEnemy()
 	HP = MaxHP;
 	//攻撃関係
 	PlayerRideMoveStartFlame = jsonData["PlayerRideMoveStartFlame"];
-	AttackCoolTime = jsonData["AttackCoolTime"];
+	attackCoolTime = 0;
 	DropRockStartPlayerHeight = jsonData["DropRockStartPlayerHeight"];
 	//ポジション関係
 	position = VGet(jsonData["InitPositionX"], jsonData["InitPositionY"], jsonData["InitPositionZ"]);
@@ -123,18 +123,19 @@ bool ArmEnemy::Update(VECTOR playerPos, Camera* camera)
 
 	//動き更新
 	moveChangeflg = move->Update(camera, playerPos);
-	if (!isAttackCoolTime && moveChangeflg /*&& nowMoveKind != MoveKind::Idle && nowMoveKind != MoveKind::FallDown*/)
+	if (!isAttackCoolTime && moveChangeflg)
 	{
+		attackCoolTime = move->GetCoolTime();
 		attackCoolTimeFlame = 0;
 		isAttackCoolTime = true;
 	}
 
 	//攻撃が終わっている場合クールタイムを進める
-	if (isAttackCoolTime && nowMoveKind != MoveKind::DropRock)
+	if (isAttackCoolTime)
 	{
 		attackCoolTimeFlame++;
 
-		if (attackCoolTimeFlame == AttackCoolTime)
+		if (attackCoolTimeFlame == attackCoolTime)
 		{
 			isAttackCoolTime = false;
 		}
@@ -286,7 +287,7 @@ void ArmEnemy::ChangeMove(VECTOR playerPos)
 	}
 
 	//振り回し...プレイヤーが上腕に乗っている場合
-	if (nowMoveKind != MoveKind::Swing && nowMoveKind != MoveKind::HandUp && isPlayerRide && playerRidePlace == (int)PartsName::Upperarm && isAttackCoolTime)
+	if (nowMoveKind != MoveKind::Swing && nowMoveKind != MoveKind::HandUp && isPlayerRide && playerRidePlace == (int)PartsName::Upperarm && !isAttackCoolTime)
 	{
 		VECTOR prevRotate = move->GetRotate();
 		delete move;
@@ -295,7 +296,7 @@ void ArmEnemy::ChangeMove(VECTOR playerPos)
 	}
 
 	//腕を上げる...プレイヤーが手に乗っている場合
-	if (nowMoveKind != MoveKind::HandUp && nowMoveKind != MoveKind::Swing && isPlayerRide && playerRidePlace == (int)PartsName::Hand && isAttackCoolTime)
+	if (nowMoveKind != MoveKind::HandUp && nowMoveKind != MoveKind::Swing && isPlayerRide && playerRidePlace == (int)PartsName::Hand && !isAttackCoolTime)
 	{
 		VECTOR prevRotate = move->GetRotate();
 		delete move;

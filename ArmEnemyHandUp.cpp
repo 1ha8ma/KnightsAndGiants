@@ -1,4 +1,6 @@
+#include<fstream>
 #include"DxLib.h"
+#include"nlohmann/json.hpp"
 #include"Camera.h"
 #include"ArmEnemyHandUp.h"
 
@@ -8,6 +10,17 @@
 /// <param name="modelHandle">モデルハンドル</param>
 ArmEnemyHandUp::ArmEnemyHandUp(int modelHandle,VECTOR prevRotate) :ArmEnemyMoveBase(modelHandle)
 {
+	//ファイル読み込み
+	using Json = nlohmann::json;
+	Json jsonData;
+	std::ifstream ifs("Data/GameData/ArmEnemyData.json");
+	if (ifs)
+	{
+		ifs >> jsonData;
+	}
+
+	//変数初期化
+	coolTime = jsonData["HandUpCoolTime"];
 	//変数初期化
 	rotate = prevRotate;
 	moveState = 0;

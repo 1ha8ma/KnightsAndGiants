@@ -37,11 +37,15 @@ public:
 	/// </summary>
 	virtual void Draw()abstract;
 
-
+	//Get,Set
+	//ボーンの回転した分
 	VECTOR GetRotate() { return rotate; }
+	//クールタイム
+	int GetCoolTime() { return coolTime; }
 
 protected:
 	int modelHandle;	//モデルハンドル
 	VECTOR rotate;		//回転用
 	int moveState;		//動き状態
+	int coolTime;		//攻撃後のクールタイム
 };
