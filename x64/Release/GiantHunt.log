@@ -1,15 +1,56 @@
-﻿  Player.cpp
+﻿  ArmEnemy.cpp
+C:\Users\hamar\Desktop\KnightsAndGiants\Library\Dxlib_h\DxLib.h(3344,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+C:\Users\hamar\Desktop\KnightsAndGiants\ArmEnemyIdle.h(14): warning C4305: '引数': 'double' から 'float' へ切り詰めます。
+  ArmEnemyDropRock.cpp
+C:\Users\hamar\Desktop\KnightsAndGiants\Library\Dxlib_h\DxLib.h(3344,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  ArmEnemyFallDown.cpp
+C:\Users\hamar\Desktop\KnightsAndGiants\Library\Dxlib_h\DxLib.h(3344,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  ArmEnemyHandUp.cpp
+C:\Users\hamar\Desktop\KnightsAndGiants\Library\Dxlib_h\DxLib.h(3344,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  ArmEnemyIdle.cpp
+C:\Users\hamar\Desktop\KnightsAndGiants\Library\Dxlib_h\DxLib.h(3344,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+C:\Users\hamar\Desktop\KnightsAndGiants\ArmEnemyIdle.h(14): warning C4305: '引数': 'double' から 'float' へ切り詰めます。
+  ArmEnemyMoveBase.cpp
+C:\Users\hamar\Desktop\KnightsAndGiants\Library\Dxlib_h\DxLib.h(3344,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  ArmEnemyStage.cpp
+C:\Users\hamar\Desktop\KnightsAndGiants\Library\Dxlib_h\DxLib.h(3344,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  ArmEnemyStartScene.cpp
+C:\Users\hamar\Desktop\KnightsAndGiants\Library\Dxlib_h\DxLib.h(3344,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+C:\Users\hamar\Desktop\KnightsAndGiants\Library\Effekseer_h\DxLib.h(3344,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  ArmEnemySwing.cpp
+C:\Users\hamar\Desktop\KnightsAndGiants\Library\Dxlib_h\DxLib.h(3344,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  GameClearScene.cpp
+C:\Users\hamar\Desktop\KnightsAndGiants\Library\Dxlib_h\DxLib.h(3344,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+C:\Users\hamar\Desktop\KnightsAndGiants\Library\Effekseer_h\DxLib.h(3344,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  GameOverScene.cpp
+C:\Users\hamar\Desktop\KnightsAndGiants\Library\Dxlib_h\DxLib.h(3344,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+C:\Users\hamar\Desktop\KnightsAndGiants\Library\Effekseer_h\DxLib.h(3344,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  GameScene.cpp
+C:\Users\hamar\Desktop\KnightsAndGiants\Library\Dxlib_h\DxLib.h(3344,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+C:\Users\hamar\Desktop\KnightsAndGiants\Library\Effekseer_h\DxLib.h(3344,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  Main.cpp
+C:\Users\hamar\Desktop\KnightsAndGiants\Library\Dxlib_h\DxLib.h(3344,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+C:\Users\hamar\Desktop\KnightsAndGiants\Library\Effekseer_h\DxLib.h(3344,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  Player.cpp
 C:\Users\hamar\Desktop\KnightsAndGiants\Library\Dxlib_h\DxLib.h(3344,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
 C:\Users\hamar\Desktop\KnightsAndGiants\Player.cpp(431,10): warning C4244: '-=': 'float' から 'int' への変換です。データが失われる可能性があります。
+  PlayerClimb.cpp
+C:\Users\hamar\Desktop\KnightsAndGiants\Library\Dxlib_h\DxLib.h(3344,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
   PlayerFalling.cpp
 C:\Users\hamar\Desktop\KnightsAndGiants\Library\Dxlib_h\DxLib.h(3344,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
 C:\Users\hamar\Desktop\KnightsAndGiants\PlayerFalling.cpp(80,15): warning C4244: '初期化中': 'int' から 'float' への変換です。データが失われる可能性があります。
 C:\Users\hamar\Desktop\KnightsAndGiants\PlayerFalling.cpp(81,15): warning C4244: '初期化中': 'int' から 'float' への変換です。データが失われる可能性があります。
+  PlayerJump.cpp
+C:\Users\hamar\Desktop\KnightsAndGiants\Library\Dxlib_h\DxLib.h(3344,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+C:\Users\hamar\Desktop\KnightsAndGiants\PlayerJump.cpp(86,15): warning C4244: '初期化中': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\hamar\Desktop\KnightsAndGiants\PlayerJump.cpp(87,15): warning C4244: '初期化中': 'int' から 'float' への変換です。データが失われる可能性があります。
+  StageObject.cpp
+C:\Users\hamar\Desktop\KnightsAndGiants\Library\Dxlib_h\DxLib.h(3344,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
 EffekseerForDXLib_vs2019_x64_d.lib(EffekseerForDXLib.obj) : warning LNK4075: /EDITANDCONTINUE は /OPT:ICF の指定によって無視されます。
   コード生成しています。
-  5 of 3007 functions ( 0.2%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    2 functions had inline decision re-evaluated but remain unchanged
+  71 of 3008 functions ( 2.4%) were compiled, the rest were copied from previous compilation.
+    1 functions were new in current compilation
+    27 functions had inline decision re-evaluated but remain unchanged
   コード生成が終了しました。
 EffekseerForDXLib_vs2019_x64_d.lib(EffekseerForDXLib.obj) : warning LNK4099: PDB '' が 'EffekseerForDXLib_vs2019_x64_d.lib(EffekseerForDXLib.obj)' で、または '' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
 Effekseer_vs2019_x64_d.lib(Effekseer.Vector3D.obj) : warning LNK4099: PDB '' が 'Effekseer_vs2019_x64_d.lib(Effekseer.Vector3D.obj)' で、または '' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。

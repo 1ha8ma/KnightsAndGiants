@@ -188,8 +188,8 @@ void TitleScene::Draw()
 	{
 		SetDrawBlendMode(DX_BLENDMODE_ALPHA, stringAlpha);
 		//タイトル名
-		SetFontSize(150);
-		DrawString(200, 300, "騎士と巨人", GetColor(0, 0, 0));
+		SetFontSize(TitleFontSize);
+		DrawString(TitlePosX, TitlePosY, "騎士と巨人", GetColor(0, 0, 0));
 
 		//ボタン指示
 		//透明度変更
@@ -199,19 +199,19 @@ void TitleScene::Draw()
 		}
 		SetFontSize(50);
 		DrawString(500, 500, "Press B Button", GetColor(0, 0, 0));
-		SetDrawBlendMode(DX_BLENDMODE_ALPHA, 255);//透明度を元に戻す
+		SetDrawBlendMode(DX_BLENDMODE_ALPHA, MaxAlpha);//透明度を元に戻す
 	}
 	break;
 	case State::Select:
 	{
 		SetDrawBlendMode(DX_BLENDMODE_ALPHA, stringAlpha);
 		SetFontSize(50);
-		DrawString(100, 200, "Game Start", GetColor(0, 0, 0));
-		DrawString(100, 300, "ランキング", GetColor(0, 0, 0));
-		DrawString(100, 400, "操作説明", GetColor(0, 0, 0));
+		DrawString(SelectSceneDrawPosX, SelectSceneDrawPosYTop, "Game Start", GetColor(0, 0, 0));
+		DrawString(SelectSceneDrawPosX, SelectSceneDrawPosYTop + SelectSceneDrawPosYDistance, "ランキング", GetColor(0, 0, 0));
+		DrawString(SelectSceneDrawPosX, SelectSceneDrawPosYTop + SelectSceneDrawPosYDistance * 2, "操作説明", GetColor(0, 0, 0));
 
 		//三角形
-		DrawTriangle(20, trianglePosY - 20, 20, trianglePosY + 20, 70, trianglePosY, GetColor(0, 0, 0), TRUE);
+		DrawTriangle(TrianglePosX, trianglePosY - TriangleAddLengthY, TrianglePosX, trianglePosY + TriangleAddLengthY, TrianglePosXTop, trianglePosY, GetColor(0, 0, 0), TRUE);
 		SetDrawBlendMode(DX_BLENDMODE_ALPHA, MaxAlpha);
 	}
 	break;

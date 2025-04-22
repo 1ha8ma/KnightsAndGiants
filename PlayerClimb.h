@@ -33,7 +33,7 @@ private:
 	//入力された情報をポリゴンの平面に映す
 	VECTOR ProjectOnPlane(VECTOR inputDir, VECTOR polygonNormal);
 
-	//オブジェクトの動きに着いていく
+	//オブジェクトの動きに追従
 	VECTOR FollowObjectMove(int nearPolygonNumber, CollisionData objectData);
 
 	//他クラス

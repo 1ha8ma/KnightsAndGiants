@@ -248,7 +248,7 @@ VECTOR PlayerClimb::ProjectOnPlane(VECTOR inputDir, VECTOR polygonNorm)
 }
 
 /// <summary>
-/// オブジェクトの動きに着いていく
+/// オブジェクトの動きに追従
 /// </summary>
 /// <param name="nearPolygonNumber">一番近いポリゴンの番号</param>
 /// <param name="objectData">オブジェクト情報</param>

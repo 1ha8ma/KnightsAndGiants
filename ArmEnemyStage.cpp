@@ -14,10 +14,10 @@ ArmEnemyStage::ArmEnemyStage()
 	//インスタンス化
 	Loader* loader = loader->GetInstance();
 	wall = new Wall();
-	wood = new StageObject(loader->GetHandle(Loader::Kind::WoodModel), VGet(-2000, 1000, 0), VGet(1000, -500, 0), 800.0f, VGet(3700.0f, 1000.0f, 3500.0f), VGet(-DX_PI_F / 2, 0.0f, -0.7f), 40.0f);
-	rock1 = new StageObject(loader->GetHandle(Loader::Kind::RockModel1), VGet(-500, 0, 50), VGet(400, 0, 0), 1300.0f, VGet(500, 2300, 4400), VGet(0, 0, DX_PI_F / 2), 5.0f);
-	rock2 = new StageObject(loader->GetHandle(Loader::Kind::RockModel2), VGet(200, 400, 0), VGet(-600, 400, 0), 1000.0f, VGet(3500, 3000, 4000), VGet(0, 0, 0), 10.0f);
-	rock3 = new StageObject(loader->GetHandle(Loader::Kind::RockModel3), VGet(-800, 1000, -500), VGet(800, -1000, -500), 1400.0f, VGet(2300, 5800, 5000), VGet(0, 0, DX_PI_F / 4), 6.0f);
+	wood = new StageObject(loader->GetHandle(Loader::Kind::WoodModel), WoodAddCapsuleStart, WoodAddCapsuleEnd, WoodCapsuleRadius, WoodPosition, WoodRotate, WoodScale);
+	rock1 = new StageObject(loader->GetHandle(Loader::Kind::RockModel1), Rock1AddCapsuleStart, Rock1AddCapsuleEnd, Rock1CapsuleRadius, Rock1Position, Rock1Rotate, Rock1Scale);
+	rock2 = new StageObject(loader->GetHandle(Loader::Kind::RockModel2), Rock2AddCapsuleStart, Rock2AddCapsuleEnd, Rock2CapsuleRadius, Rock2Position, Rock2Rotate, Rock2Scale);
+	rock3 = new StageObject(loader->GetHandle(Loader::Kind::RockModel3), Rock3AddCapsuleStart, Rock3AddCapsuleEnd, Rock3CapsuleRadius, Rock3Position, Rock3Rotate, Rock3Scale);
 	bgm = new BGM(BGM::BGMKind::ArmEnemyStage);
 
 	//変数初期化

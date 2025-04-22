@@ -36,6 +36,15 @@ private:
 	const int AlphaIncrease = 2;					//濃くする速さ
 	const int ChangeStageStringAlphaIncrease = 5;	//タイトルから場面選択に行く時の文字のきえる速さ
 	const float CursorSpeed = 100;					//カーソル移動速度
+	const int TitleFontSize = 150;					//タイトルフォントサイズ]
+	const int TitlePosX = 200;						//タイトル文字ポジションX
+	const int TitlePosY = 300;						//タイトル文字ポジションY
+	const int SelectSceneDrawPosX = 100;			//シーン選択のシーンの文字のポジションX
+	const int SelectSceneDrawPosYTop = 200;			//シーン選択のシーンの文字の一番上のポジションY
+	const int SelectSceneDrawPosYDistance = 100;	//2つのシーンの文字の幅
+	const int TrianglePosX = 20;					//三角形カーソルのポジションX
+	const int TrianglePosXTop = 70;					//三角形カーソルの先端ポジションX
+	const int TriangleAddLengthY = 20;				//三角形カーソルのY座標に伸ばす長さ
 
 	//他クラス
 	Input* input;
